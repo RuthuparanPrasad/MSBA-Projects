@@ -4,8 +4,6 @@
 Created on Fri Oct 28 19:40:25 2022
 
 @author: Ruthuparan Prasad
-Student ID: 2230308
-Title: Assignment Problem 5
 
 Raw Material Shipping - LP Model:
     

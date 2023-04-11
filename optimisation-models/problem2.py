@@ -4,8 +4,6 @@
 Created on Wed Oct 26 09:32:52 2022
 
 @author: Ruthuparan Prasad
-Student ID: 2230308
-Title: Assignment Problem 2
 
 Rug Manufacturer - LP Model:
     

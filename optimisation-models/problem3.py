@@ -4,8 +4,6 @@
 Created on Thu Oct 27 21:13:57 2022
 
 @author: Ruthuparan Prasad
-Student ID: 2230308
-Title: Assignment Problem 3
 
 Sanders Fishing - LP Model: 
     

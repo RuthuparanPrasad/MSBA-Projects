@@ -59,7 +59,7 @@ esum_grob <- tableGrob(esum, rows = NULL)
 grid.arrange(esum.plot, esum_grob, nrow = 2, heights = c(9,3))
 ```
 
-<img src="group26_AiP_Assignment_R_Code_files/figure-gfm/init-emails-vs-visit-plot-1.png" style="display: block; margin: auto;" />
+<img src="PredictiveModel_EmailMarketing_files/figure-gfm/init-emails-vs-visit-plot-1.png" style="display: block; margin: auto;" />
 
 ``` r
 print(paste("The visit rate is", visit.rate, "%"))
@@ -643,7 +643,7 @@ xgb.elapsed <- round(xgb.elapsed, 2)
 print(paste("XGBoost model took", xgb.elapsed, "seconds to train."))
 ```
 
-    ## [1] "XGBoost model took 34.95 seconds to train."
+    ## [1] "XGBoost model took 34.17 seconds to train."
 
 ``` r
 # Making the predictions
@@ -998,7 +998,7 @@ Random Forest
 XGBoost
 </td>
 <td style="text-align:left;">
-34.95
+34.17
 </td>
 <td style="text-align:left;">
 80.49
@@ -1093,7 +1093,7 @@ ROC_XGB <- roc(testdata$visit, xgb_prob[,2])
 ggroc(list("Logistic Regression" = ROC_LogReg, "SVM" = ROC_SVM, "Random Forest" = ROC_RF, "XGBoost" = ROC_XGB), legacy.axes=TRUE)+ xlab("False Positive Rate") + ylab("True Positive Rate") + geom_abline(intercept = 0, slope = 1, color = "darkgrey", linetype = "dashed") + scale_colour_manual(values = c("pink", "green", "blue", "red")) + labs(color='Model Name')
 ```
 
-<img src="group26_AiP_Assignment_R_Code_files/figure-gfm/roc-curves-for all models-1.png" style="display: block; margin: auto;" />
+<img src="PredictiveModel_EmailMarketing_files/figure-gfm/roc-curves-for all models-1.png" style="display: block; margin: auto;" />
 
 ``` r
 set.seed(123)
@@ -1214,4 +1214,4 @@ c("LogReg", "SVM", "Random Forest", "Decision Tree", "XGBoost"),
 fill=c("lightseagreen","green", "blue", "purple", "red"))
 ```
 
-<img src="group26_AiP_Assignment_R_Code_files/figure-gfm/cumulative-gains-1.png" style="display: block; margin: auto;" />
+<img src="PredictiveModel_EmailMarketing_files/figure-gfm/cumulative-gains-1.png" style="display: block; margin: auto;" />
